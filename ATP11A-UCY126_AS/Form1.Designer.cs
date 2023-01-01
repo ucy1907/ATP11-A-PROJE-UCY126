@@ -45,6 +45,7 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -70,7 +71,7 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button2.Location = new System.Drawing.Point(3, 52);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(387, 40);
+            this.button2.Size = new System.Drawing.Size(188, 40);
             this.button2.TabIndex = 1;
             this.button2.Text = "Yeni Kelime";
             this.button2.UseVisualStyleBackColor = true;
@@ -215,11 +216,23 @@
             this.listBox2.Size = new System.Drawing.Size(120, 95);
             this.listBox2.TabIndex = 16;
             // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button4.Location = new System.Drawing.Point(197, 52);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(188, 40);
+            this.button4.TabIndex = 17;
+            this.button4.Text = "Yeni Oyun";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(535, 543);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
@@ -271,6 +284,7 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.Button button4;
     }
 }
 

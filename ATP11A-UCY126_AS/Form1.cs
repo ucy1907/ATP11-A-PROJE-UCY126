@@ -121,7 +121,6 @@ namespace ATP11A_UCY126_AS
             }
 
             if (label3.Text == buluncakKelime)
-
             {
 
                 MessageBox.Show("Kelime'yi bildiniz. TEBRİKLER.");
@@ -163,20 +162,14 @@ namespace ATP11A_UCY126_AS
                 else if (resimSayisi == 6)
                 {
                     pictureBox7.Visible = false;
+
+
+                    MessageBox.Show("Bütün Haklarınız doldu oyunu kaybettiniz.");
+
+                    label3.Text = buluncakKelime;
+
+                    return;
                 }
-                else if (resimSayisi == 6)
-
-                    if (resimSayisi == 6)
-                    {
-
-                        MessageBox.Show("Bütün Haklarınız doldu oyunu kaybettiniz.");
-
-                        label3.Text = buluncakKelime;
-
-                        return;
-
-                    }
-
             }
         }
 
@@ -199,6 +192,11 @@ namespace ATP11A_UCY126_AS
                 MessageBox.Show("YANLIŞ TAHMİN");
 
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
         }
     }
 }
