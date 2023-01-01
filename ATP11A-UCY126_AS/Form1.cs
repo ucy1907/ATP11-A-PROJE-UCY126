@@ -64,7 +64,9 @@ namespace ATP11A_UCY126_AS
         {
             label3.Text = "";
 
-            buluncakKelime = kelimeler[r.Next(10)];
+            buluncakKelime = kelimeler[r.Next(0,kelimeler.Length)];
+
+            listBox2.Items.Add(buluncakKelime);
 
             for (int i = 0; i < buluncakKelime.Length; i++)
             {
